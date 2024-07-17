@@ -133,7 +133,7 @@ print("Type help to open help menu\n")
 print("")
 
 while True:
-    user = input(f"{colorama.Fore.MAGENTA}$")
+    user = input(f"{colorama.Fore.MAGENTA}${colorama.Fore.WHITE}")
     match user:
         case 'password --generate':
             Generate.generate_password()
