@@ -4,10 +4,13 @@ import sys
 import os
 import random
 
+name = input("Wprowadź nazwę użytkownika: ")
+passw = input("Wprowadź hasło: ")
+
 connection = mysql.connector.connect( 
     host = '127.0.0.1', 
-    user = 'root',
-    password = '',
+    user = name,
+    password = passw,
     database = 'password_manager', 
     )
 
